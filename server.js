@@ -43,8 +43,8 @@ app.use(notFound);
 // Middleware de manejo de errores
 app.use(errorHandlerServer);
 
-
+const PORT = process.env.PORT || 4000;
 // Levantar servidor
-app.listen(process.env.PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
