@@ -14,7 +14,12 @@ conectarBD();
 app.use(express.json());
 
 // para que se pueda enlazar con vercel
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://hermanosjotaecomerce.netlify.app",
+    "http://localhost:3000"
+  ]
+}))
 
 // Logger de peticiones
 const logger = require('./logger');
