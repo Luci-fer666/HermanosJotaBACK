@@ -16,7 +16,7 @@ app.use(express.json());
 // para que se pueda enlazar con vercel
 app.use(cors({
   origin: [
-    "https://hermanosjotaecomerce.netlify.app",
+    "https://hermanos-jota-ecomerce.netlify.app",
     "http://localhost:3000"
   ]
 }))
